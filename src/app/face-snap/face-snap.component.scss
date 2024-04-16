@@ -1,0 +1,25 @@
+.face-snap-card {
+    border: solid 1px #e0e0e0;
+    width: 15vw;
+    height: 100%;
+
+    img{
+        width: 100%;
+    }
+    h2, p{
+        padding: 5px;
+        text-align: center;
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+        background-color: #335535;
+        color: white;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: #c2e7c3;
+            color: black;
+        }
+    }
+}
