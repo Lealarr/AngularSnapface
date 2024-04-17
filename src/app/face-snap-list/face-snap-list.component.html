@@ -1,0 +1,11 @@
+<div class="card-container">
+    <app-face-snap *ngFor="let faceSnapElementInArray of faceSnaps" [faceSnap]="faceSnapElementInArray"></app-face-snap>
+
+    <!-- Si on veut ajouter des filtres pour afficher uniquement les facesnaps avec plus de 5 snaps 
+
+    <app-face-snap [faceSnap]="mySnap" *ngIf="mySnap.snaps > 5"></app-face-snap>
+    <app-face-snap [faceSnap]="myOtherSnap" *ngIf="myOtherSnap.snaps > 5"></app-face-snap>
+    <app-face-snap [faceSnap]="myLastSnap" *ngIf="myLastSnap.snaps > 5"></app-face-snap>
+
+    -->
+</div>
