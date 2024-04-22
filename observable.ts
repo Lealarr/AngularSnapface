@@ -1,16 +1,22 @@
+//!Angular intermediaire openClassRoom
+//?Chapitre observable
+
+/*
+
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.model';
 import { FaceSnapsService } from '../services/face-snaps.service';
-import { interval, Subject } from 'rxjs/';
+import { interval, Observable, Subject } from 'rxjs/';
 import { take, takeUntil, tap } from 'rxjs/operators';
 @Component({
   selector: 'app-face-snap-list',
   templateUrl: './face-snap-list.component.html',
   styleUrls: ['./face-snap-list.component.scss']
 })
-export class FaceSnapListComponent implements OnInit, OnDestroy {
+export class FaceSnapListComponent implements OnInit {
   
   faceSnaps!: FaceSnap[];
+  faceSnaps$!: Observable<FaceSnap[]>
   private destroy$!: Subject<boolean>
   
   constructor(private faceSnapsService: FaceSnapsService){
@@ -29,4 +35,7 @@ export class FaceSnapListComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.destroy$.next(true);
   }
+  
+  }
 }
+*/
