@@ -1,19 +1,22 @@
 header {
     text-align: center;
-    background-color: #EEE;
+    background-color: #303030;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px;
     a {
         margin: 0 10px;
-        color: #333;
+        color: #dddddd;
         text-decoration: none;
         &:hover {
             text-decoration: underline;
         }
     }
+    h1{
+        color: #dfdfdf;
+    }
     
     .active {
-        color: #666;
+        color: #dfdfdf;
         text-decoration: underline;
     }
 }

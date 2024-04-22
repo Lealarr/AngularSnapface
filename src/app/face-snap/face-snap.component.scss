@@ -26,13 +26,9 @@
 */
 .face-snap-card {
     box-sizing: border-box;
-    width: 100%;
     margin: 20px auto;
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;
-    img {
-        width: 100%;
-    }
     h2 {
         margin-bottom: 0;
     }
@@ -40,15 +36,20 @@
         font-weight: 300;
         font-size: 16px;
     }
-}
-.snapped {
-    background-color: rgba(lightgreen, 0.4);
-    color: darkgreen;
-    button {
-        box-shadow: lightgreen 3px 3px 7px;
-        color: darkgreen;
+    button{
+        width: 100%;
+        padding: 10px;
+        background-color: #335535;
+        color: white;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: #c2e7c3;
+            color: black;
+        }
         &:active {
-            box-shadow: lightgreen 0 0 5px;
+            transform: translate(1px, 1px);
+            box-shadow: lightgray 0 0 5px;
         }
     }
 }
