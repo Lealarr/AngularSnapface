@@ -4,11 +4,14 @@ import { SingleFaceSnapComponent } from './components/single-face-snap/single-fa
 import { FaceSnapListComponent } from './components/face-snap-list/face-snap-list.component';
 import { NewFaceSnapComponent } from './components/new-face-snap/new-face-snap.component';
 import { FilterFaceSnapComponent } from './components/filter-face-snap/filter-face-snap.component';
-import { AuthGuard } from '../core/guards/auth.guard';
+//import { AuthGuard } from '../core/guards/auth.guard';
+//! Ajouter la ligne ci-dessous dans le tableau des routes pour protéger la route
+//? exemple: { path: 'create', component: NewFaceSnapComponent, canActivate: [AuthGuard] },
+//canActivate: [AuthGuard]
 
 const routes: Routes = [
-    { path: 'create', component: NewFaceSnapComponent},
-    { path: ':id', component: SingleFaceSnapComponent},
+    { path: 'create', component: NewFaceSnapComponent },
+    { path: ':id', component: SingleFaceSnapComponent },
     { path: 'filter', component: FilterFaceSnapComponent },
     { path: '', component: FaceSnapListComponent },
 ];
