@@ -1,7 +1,8 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FaceSnap } from '../../../core/models/face-snap.model';
 import { FaceSnapsService } from '../../../core/services/face-snaps.service';
 import { Observable } from 'rxjs/';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-face-snap-list',
@@ -13,11 +14,17 @@ export class FaceSnapListComponent implements OnInit {
   faceSnaps$!: Observable<FaceSnap[]>
 
   
-  constructor(private faceSnapsService: FaceSnapsService){
+  constructor(
+    private faceSnapsService: FaceSnapsService,
+    private router: Router){
   }
 
   ngOnInit(): void {
 
     this.faceSnaps$ = this.faceSnapsService.getAllFaceSnaps()
+  }
+
+  filterFaceSnap(){
+    this.router.navigateByUrl('face-snaps/filter');
   }
 }
