@@ -36,20 +36,8 @@
         font-weight: 300;
         font-size: 16px;
     }
-    button{
+    button {
         width: 100%;
-        padding: 10px;
-        background-color: #335535;
-        color: white;
-        border: none;
-        cursor: pointer;
-        &:hover{
-            background-color: #c2e7c3;
-            color: black;
-        }
-        &:active {
-            transform: translate(1px, 1px);
-            box-shadow: lightgray 0 0 5px;
-        }
     }
+    
 }

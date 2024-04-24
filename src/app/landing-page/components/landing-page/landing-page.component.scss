@@ -1,15 +1,24 @@
 .landing-block {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+        padding: 10px 0px 10px 0px;
+        font-size: large;
+
+        button {
+            margin-top: 20px;
+            font-size: large;
+        }
+    }
 }
 
-.landing-links {
-    width: 100%;
-    text-align: center;
-}
 
-button {
-    font-size: 20px;
-}
+

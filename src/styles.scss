@@ -7,5 +7,51 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f5f2f2;
+    button{
+        padding: 10px;
+        background-color: #335535;
+        color: white;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: #c2e7c3;
+            color: black;
+        }
+        &:active {
+            transform: translate(1px, 1px);
+            box-shadow: lightgray 0 0 5px;
+        }
+    }
+
+    header {
+        text-align: center;
+        background-color: #303030;
+        margin-bottom: 20px;
+        padding: 20px;
+        a {
+            margin: 0 10px;
+            color: #dddddd;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        h1{
+            color: #dfdfdf;
+        }
+        
+        .active {
+            color: #dfdfdf;
+            text-decoration: underline;
+        }
+    
+        button {
+            margin-top: 30px;
+            
+        }
+    }
+    
+    
+    
 }
 
