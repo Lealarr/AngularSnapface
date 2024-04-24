@@ -14,9 +14,11 @@ export class SingleFaceSnapComponent implements OnInit {
   faceSnap$!: Observable<FaceSnap>;
   buttonText!:string;
 
-  constructor(private faceSnapsService: FaceSnapsService, private route: ActivatedRoute){}
+  constructor(
+    private faceSnapsService: FaceSnapsService, 
+    private route: ActivatedRoute){}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.buttonText = "J'aime";
     const faceSnapId = +this.route.snapshot.params['id'];
     this.faceSnap$ = this.faceSnapsService.getFaceSnapById(faceSnapId);

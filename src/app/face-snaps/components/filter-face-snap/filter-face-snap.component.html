@@ -1,9 +1,10 @@
-<p>filter-face-snap works!</p>
-<p>filter-face-snap works!</p>
-<p>filter-face-snap works!</p>
-<p>filter-face-snap works!</p>
-<p>filter-face-snap works!</p>
-<p>filter-face-snap works!</p>
-<p>filter-face-snap works!</p>
-<p>filter-face-snap works!</p>
-<p>filter-face-snap works!</p>
+<div class="filter-container">
+    <div class="filter-input">
+        <label for="filter">Filtrer : </label>
+        <input [(ngModel)]="facesnapSearch" type="text" placeholder="Rechercher un facesnap">
+        <button (click)="storeSearch()">Rechercher</button>
+    </div>
+    <div class="face-snap">
+        <app-face-snap *ngFor="let faceSnap of faceSnaps$ | async" [faceSnap]="faceSnap" class="face-snap-card"></app-face-snap>
+    </div>
+</div>

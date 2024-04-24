@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { AuthModule } from './auth/auth.module';
+import { FaceSnapsModule } from './face-snaps/face-snaps.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     CoreModule,
     LandingPageModule,
-    AuthModule
+    AuthModule,
+    FaceSnapsModule
   ],
   bootstrap: [AppComponent]
 })

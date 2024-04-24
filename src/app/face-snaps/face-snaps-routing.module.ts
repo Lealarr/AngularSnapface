@@ -11,7 +11,7 @@ import { FilterFaceSnapComponent } from './components/filter-face-snap/filter-fa
 
 const routes: Routes = [
     { path: 'create', component: NewFaceSnapComponent },
-    { path: ':id', component: SingleFaceSnapComponent },
+    { path: 'face-snaps/:id', component: SingleFaceSnapComponent },
     { path: 'filter', component: FilterFaceSnapComponent },
     { path: '', component: FaceSnapListComponent },
 ];
